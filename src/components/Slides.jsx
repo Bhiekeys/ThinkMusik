@@ -1,24 +1,9 @@
 import background from '../assets/background.png';
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
+
 const Slides = () => {
   return (
-    <Swiper
-      modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-      slidesPerView={1}
-      navigation
-      pagination={{ clickable: true }}
-      autoplay={true}
-      >
-      <SwiperSlide
+    <div>
+      <div
         style={{
           backgroundImage: `url(${background})`,
           backgroundSize: 'contain', // Adjust the background size as needed
@@ -36,8 +21,8 @@ const Slides = () => {
             coming soon
           </button>
         </div>
-      </SwiperSlide>
-    </Swiper>
+      </div>
+    </div>
   );
 };
 export default Slides;
