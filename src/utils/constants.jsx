@@ -4,7 +4,6 @@ import licks from '../assets/licks.png';
 import amaze from '../assets/amaze.png';
 import amazing from '../assets/amazing.png';
 import goodness from '../assets/goodness.png';
-import {IoGrid} from "react-icons/io"
 export const navs = [
   {
     id: 1,

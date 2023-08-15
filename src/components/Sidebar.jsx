@@ -8,6 +8,7 @@ const Sidebar = ({ children }) => {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <div className="">
+      
       <div
         className={`${
           isOpen ? 'w-[273px]' : 'w-16'
@@ -17,7 +18,7 @@ const Sidebar = ({ children }) => {
             isOpen && 'ml-[32px] mr-[41px]'
           } pt-[18px] pb-[41px]`}>
           <BiMenu
-            className=" text-[#D1D2D6] text-[32px] cursor-pointer"
+            className="hidden sm:block text-[#D1D2D6] text-[32px] cursor-pointer"
             onClick={toggle}
           />
           {isOpen && <img src={logo} alt="" />}
