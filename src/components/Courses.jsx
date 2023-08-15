@@ -8,13 +8,13 @@ const Courses = () => {
     <>
       <div className="mt-[60px]">
         <Reuse type="New Courses" />
-        <div className="flex justify-between  mt-[32px] ">
+        <div className="flex gap-5 justify-center flex-wrap  mt-[32px] ">
           {courses.slice(0, 3).map((course) => {
             const { id, type, title, image } = course;
             return (
               <div
                 key={id}
-                className="h-[305px] px-[19px] bg-[#191D31] w-[310px] rounded-[8px] grid place-content-center">
+                className="md:h-[305px]  md:px-[19px] bg-[#191D31] md:w-[310px] rounded-[8px] grid place-content-center">
                 <img src={image} alt="" width={304.214} height={171.22} />
                 <h2 className="text-[#fff] text-[18px] font-semibold mt-[16.36px]">
                   {title}

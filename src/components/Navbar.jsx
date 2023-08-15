@@ -12,12 +12,12 @@ const Navbar = () => {
         <CustomDropdown />
       </div>
       <div className="flex items-center gap-[30px]">
-        <div className="flex items-center w-[249px] h-[40px] gap-1 pl-[18px] rounded-[5px] bg-[#131627] text-[#D1D2D6]">
+        <div className="flex items-center md:w-[249px] h-[40px] gap-1 pl-[18px] rounded-[5px] bg-[#131627] text-[#D1D2D6]">
           <img src={search} className="w-[20px] h-[20px] mt-1 " />
           <input
             type="text"
             placeholder="search"
-            className="bg-[#131627] pr-[22px] py-[7px]  outline-none placeholder:text-[#D1D2D6] placeholder:text-[14px]"
+            className="bg-[#131627] md:pr-[22px] py-[7px]  outline-none placeholder:text-[#D1D2D6] placeholder:text-[14px]"
           />
         </div>
         <div className="hidden md:flex items-center gap-[15px]">

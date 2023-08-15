@@ -17,7 +17,7 @@ const Sidebar = ({ children }) => {
             isOpen && 'ml-[32px] mr-[41px]'
           } pt-[18px] pb-[41px]`}>
           <BiMenu
-            className="hidden sm:block text-[#D1D2D6] text-[32px]"
+            className="hidden sm:block text-[#D1D2D6] text-[32px] cursor-pointer"
             onClick={toggle}
           />
           {isOpen && <img src={logo} alt="" />}

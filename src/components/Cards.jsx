@@ -11,7 +11,7 @@ const Cards = () => {
           return (
             <div
               key={id}
-              className="sm:w-[312px] w-[230px] border border-[rgba(71, 119, 225, 0.30)] rounded-lg h-[166px] grid place-content-center background">
+              className="sm:w-[312px] w-[220px] border border-[rgba(71, 119, 225, 0.30)] rounded-lg h-[166px] grid place-content-center background">
               <div className="flex justify-center"> {icon}</div>
               <h2 className="text-[#fff] text-[24px] capitalize font-semibold">
                 {name}
