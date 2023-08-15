@@ -1,8 +1,9 @@
 import { courses } from '../utils/constants';
-import plus from "../assets/plus.png"
-import play from "../assets/play.png"
+import plus from '../assets/plus.png';
+import play from '../assets/play.png';
 import Reuse from './Reuse';
 import SongSheet from './SongSheet';
+
 const Courses = () => {
   return (
     <>
@@ -31,7 +32,7 @@ const Courses = () => {
           })}
         </div>
       </div>
-      <div className='mt-[60px]'>
+      <div className="mt-[60px]">
         <SongSheet />
       </div>
     </>

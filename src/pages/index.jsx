@@ -6,3 +6,4 @@ export { default as OuickTips } from './OuickTips';
 export { default as Overview } from './Overview';
 export { default as Shop } from './Shop';
 export { default as SongSheet } from './SongSheet';
+export { default as Errorpage } from './Errorpage';

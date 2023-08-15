@@ -11,3 +11,8 @@ background: linear-gradient(180deg, rgba(231, 243, 246, 0.15) 0%, rgba(71, 119, 
 .webkit::-webkit-scrollbar{
 display:none;
 }
+
+.scroll-container {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
