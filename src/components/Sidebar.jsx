@@ -11,13 +11,13 @@ const Sidebar = ({ children }) => {
       <div
         className={`${
           isOpen ? 'w-[273px]' : 'w-16'
-        }  bg-dark-blue duration-500 h-full `}>
+        } bg-dark-blue duration-500 h-screen `}>
         <div
           className={` ${isOpen && 'flex'} ml-[14px] items-center gap-[16px] ${
             isOpen && 'ml-[32px] mr-[41px]'
           } pt-[18px] pb-[41px]`}>
           <BiMenu
-            className="hidden sm:block text-[#D1D2D6] text-[32px] cursor-pointer"
+            className=" text-[#D1D2D6] text-[32px] cursor-pointer"
             onClick={toggle}
           />
           {isOpen && <img src={logo} alt="" />}

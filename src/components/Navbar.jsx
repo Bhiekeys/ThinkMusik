@@ -6,7 +6,7 @@ import candidate from '../assets/candidate.png';
 import {RiArrowDropDownLine} from "react-icons/ri"
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between h-[71px] bg-[#191D31] md:px-10 w-full ">
+    <div className="flex items-center justify-between h-[10vh] bg-[#191D31] md:px-10  w-full ">
       <div className="hidden md:flex items-center">
         <img src={bass} width="32"/>
         <CustomDropdown />
