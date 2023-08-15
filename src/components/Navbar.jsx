@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between h-[71px] bg-[#191D31] md:px-10 w-full ">
       <div className="hidden md:flex items-center">
-        <img src={bass} />
+        <img src={bass} width="32"/>
         <CustomDropdown />
       </div>
       <div className="flex items-center gap-[30px]">
@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-[15px]">
           <img src={notification} className="cursor-pointer" />
           <div className="flex items-center cursor-pointer">
-            <img src={candidate} alt="" />
+            <img src={candidate} alt="" width="24" height="27"/>
             <RiArrowDropDownLine className="text-[#D1D2D6] text-[24px]" />
           </div>
         </div>
