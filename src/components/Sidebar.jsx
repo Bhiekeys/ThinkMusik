@@ -21,7 +21,7 @@ const Sidebar = ({ children }) => {
             className="hidden sm:block text-[#D1D2D6] text-[32px] cursor-pointer"
             onClick={toggle}
           />
-          {isOpen && <img src={logo} alt="" />}
+          {isOpen && <img src={logo} alt="logo" />}
         </div>
         {navs.map((nav) => {
           const { id, path, name, icon } = nav;
