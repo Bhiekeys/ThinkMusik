@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Sidebar.css */
+.nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #d1d2d6;
+    text-transform: capitalize;
+    gap: 18px;
+    padding: 16px 90px 16px 34px;
+    transition: all 0.2s;
+
+    &:hover {
+        color: #3375d9;
+        border-left: 4px solid #3375d9;
+    }
+}
+
+.nav-icon {
+    transition: fill 0.2s;
+}
+
+.nav-link:hover .nav-icon {
+    fill: #3375d9;
+}
+
+.background{
+background: linear-gradient(180deg, rgba(231, 243, 246, 0.15) 0%, rgba(71, 119, 225, 0.09) 100%);
+}
+
+.webkit::-webkit-scrollbar{
+display:none;
+}
