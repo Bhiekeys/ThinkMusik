@@ -11,7 +11,7 @@ const Sidebar = ({ children }) => {
       <div
         className={`${
           isOpen ? 'w-[273px]' : 'w-16'
-        }  bg-dark-blue duration-500 h-screen overflow-y-hidden `}>
+        }  bg-dark-blue duration-500 h-full `}>
         <div
           className={` ${isOpen && 'flex'} ml-[14px] items-center gap-[16px] ${
             isOpen && 'ml-[32px] mr-[41px]'
