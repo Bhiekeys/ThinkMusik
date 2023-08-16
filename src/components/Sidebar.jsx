@@ -2,7 +2,7 @@ import logo from '../assets/logo.png';
 import { BiMenu } from 'react-icons/bi';
 import { navs } from '../utils/constants';
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import React, { useState } from 'react';
 const Sidebar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
@@ -33,9 +33,9 @@ const Sidebar = ({ children }) => {
                 nav?.border && 'border-t border-[#373b4e]'
               } group flex items-center text-[14px]  text-[#D1D2D6] capitalize gap-[18px] ${
                 isOpen && 'pl-[34px] pr-[90px]'
-              } pl-[20px] py-[16px] transition-all hoverbg  hover:text-[#3375D9] hover:border-l-[4px]  hover:border-l-[#3375D9]`}>
-              <div>{icon}</div>
-             
+              } pl-[20px] py-[16px] transition-all hoverbg  hover:text-[#3375D9] hover:border-l-[4px]  hover:border-l-[#3375D9] `}>
+              <div className="icon">{icon}</div>
+
               <h2
                 style={{
                   transitionDelay: `${id + 3}00ms`,
