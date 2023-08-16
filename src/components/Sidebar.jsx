@@ -8,11 +8,10 @@ const Sidebar = ({ children }) => {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <div className="">
-      
       <div
         className={`${
           isOpen ? 'w-[273px]' : 'w-16'
-        } bg-dark-blue duration-500 h-screen `}>
+        } bg-[#191D31] duration-500 h-screen `}>
         <div
           className={` ${isOpen && 'flex'} ml-[14px] items-center gap-[16px] ${
             isOpen && 'ml-[32px] mr-[41px]'
@@ -23,6 +22,7 @@ const Sidebar = ({ children }) => {
           />
           {isOpen && <img src={logo} alt="logo" />}
         </div>
+
         {navs.map((nav) => {
           const { id, path, name, icon } = nav;
           return (
@@ -33,14 +33,15 @@ const Sidebar = ({ children }) => {
                 nav?.border && 'border-t border-[#373b4e]'
               } group flex items-center text-[14px]  text-[#D1D2D6] capitalize gap-[18px] ${
                 isOpen && 'pl-[34px] pr-[90px]'
-              } pl-[20px] py-[16px] transition-all duration-200 hover:text-[#3375D9] hover:border-l-[4px]  hover:border-[#3375D9]`}>
+              } pl-[20px] py-[16px] transition-all hoverbg  hover:text-[#3375D9] hover:border-l-[4px]  hover:border-l-[#3375D9]`}>
               <div>{icon}</div>
+             
               <h2
                 style={{
                   transitionDelay: `${id + 3}00ms`,
                 }}
                 className={`whitespace-pre duration-500 ${
-                  !isOpen && 'opacity-0 translate-x-28 overflow-hidden'
+                  !isOpen && 'opacity-0 translate-x-28 overflow-hidden '
                 }`}>
                 {name}
               </h2>
@@ -53,6 +54,7 @@ const Sidebar = ({ children }) => {
             </NavLink>
           );
         })}
+
         <main>{children}</main>
       </div>
     </div>
